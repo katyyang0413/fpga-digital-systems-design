@@ -101,18 +101,18 @@ Files can be found in the [`lfsr`](lfsr/) folder.
 fpga-digital-systems-design/
 │
 ├── mini-alu/
-│   └── Assign1_Yang.pdf
+│   └── Assign1_Yang.pdf              # Project report containing ALU design, simulation and implementation results
 │
 ├── flip-flop-counter/
-│   ├── dff_tb.v
-│   ├── top_module.v
-│   └── practicaldff.xdc
+│   ├── dff_tb.v                      # Testbench for the D-type flip-flop
+│   ├── top_module.v                  # Top-level Verilog module for the flip-flop/counter design
+│   └── practicaldff.xdc              # Basys-3 pin constraints for switches, clock and outputs
 │
 ├── lfsr/
-│   ├── lfsr_21bit.v
-│   ├── lfsr_21bit_tb.v
-│   ├── clock.v
-│   ├── partD_top.v
-│   └── partD.xdc
+│   ├── lfsr_21bit.v                  # 21-bit Linear Feedback Shift Register implementation
+│   ├── lfsr_21bit_tb.v               # Testbench used to verify the LFSR sequence
+│   ├── clock.v                       # Clock generation / clock handling module
+│   ├── partD_top.v                   # Top-level module integrating the LFSR with the FPGA design
+│   └── partD.xdc                     # Basys-3 FPGA pin constraints for the LFSR implementation
 │
-└── README.md
+└── README.md                         # Project overview and documentation
