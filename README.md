@@ -1,8 +1,8 @@
 # FPGA Digital Systems Design
 
-This repository contains a selection of FPGA and digital systems projects completed as part of my Computer Engineering degree at Trinity College Dublin.
+This repository contains a selection of FPGA and digital systems projects developed using Verilog HDL and Xilinx Vivado for implementation on the Basys-3 FPGA board.
 
-The projects were developed using Verilog HDL and Xilinx Vivado and were designed for implementation on the Basys-3 FPGA board. The work involved combinational and sequential logic design, simulation, testbenches, FPGA implementation and hardware testing.
+The work covers combinational and sequential logic design, simulation, testbenches, FPGA implementation, timing analysis and hardware testing.
 
 > **Note:** These projects were originally completed on a previous laptop. After changing laptops, I was only able to recover part of the original project files and source code. This repository therefore contains the source files and reports that I was able to retrieve rather than the complete original Vivado projects.
 
@@ -29,7 +29,7 @@ It supports eight different operations:
 
 The design used a hierarchical structure with smaller Verilog modules connected together. A 1-bit full adder and 6-bit ripple-carry adder from previous lab work were reused as part of the arithmetic section of the ALU.
 
-A testbench was used to test the different arithmetic and logical operations before the design was synthesised and implemented using Vivado.
+A testbench was used to verify the arithmetic and logical operations before the design was synthesised and implemented in Vivado.
 
 The completed design was then programmed onto a Basys-3 FPGA, using the board switches for the inputs and function selector and the LEDs to display the 6-bit result.
 
@@ -48,9 +48,9 @@ The original Verilog source files for this assignment were not recovered when I 
 
 ## D Flip-Flop and Counter
 
-This lab focused on sequential digital logic and implementing flip-flop based designs on the FPGA.
+This lab focused on sequential digital logic and flip-flop based FPGA designs.
 
-The work included using D-type flip-flops, clocked logic and a counter design, together with a constraints file for mapping the design to the physical inputs and outputs of the Basys-3 board.
+The work included D-type flip-flops, clocked logic and a counter design, together with a constraints file for mapping the design to the physical inputs and outputs of the Basys-3 board.
 
 The recovered files include Verilog source/testbench files and the FPGA constraints file.
 
@@ -95,7 +95,7 @@ Files can be found in the [`lfsr`](lfsr/) folder.
 
 ---
 
-## Repository Structure
+## Project Structure
 
 ```text
 fpga-digital-systems-design/
@@ -116,8 +116,3 @@ fpga-digital-systems-design/
 │   └── partD.xdc
 │
 └── README.md
-```
-
-## About
-
-These projects were completed as part of my Digital Systems Design coursework at Trinity College Dublin and gave me practical experience designing, simulating and implementing digital systems using Verilog and FPGA hardware.
