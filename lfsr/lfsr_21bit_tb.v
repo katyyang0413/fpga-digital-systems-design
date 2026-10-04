@@ -4,7 +4,11 @@ reg clk, rst;
 wire [20:0] lfsr_out;
 wire max_tick_reg;
 
-lfsr_21bit uut(.clk(clk),.rst(rst),.lfsr_out(lfsr_out),.max_tick_reg(max_tick_reg));
+lfsr_21bit uut(.clk(clk),
+               .rst(rst),
+               .lfsr_out(lfsr_out),
+               .max_tick_reg(max_tick_reg)
+              );
 
 initial clk = 0;
 always #5 clk = ~clk;
